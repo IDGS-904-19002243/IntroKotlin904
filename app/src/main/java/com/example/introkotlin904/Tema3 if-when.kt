@@ -18,7 +18,7 @@ fun main(){
 
     print("--------------------------------------------------------------------------------------")
     print("Ingrese el sueldo del empleado: ")
-    val sueldo = readln().toDouble()
+    var sueldo = readln().toDouble()
     if (sueldo > 3000) {
         println("Debe pagar impuestos")
     }
