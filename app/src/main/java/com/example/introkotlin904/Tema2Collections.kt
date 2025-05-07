@@ -30,4 +30,22 @@ class Tema2Collections {
     val coches2 = mutableMapOf("uno" to 1, "dos" to 2, "tres" to 3)
     println("coches2")
     */
+
+    fun main() {
+        val readOnlyFiguras = listOf("Cuadrado", "Triangulo", "Circulo")
+        println(readOnlyFiguras)
+
+        println("La primera figura es: ${readOnlyFiguras[0]}")
+        println("El primer elemento es: ${readOnlyFiguras.first()}")
+        print("La cantidad de elementos es de: ${readOnlyFiguras.count()} items")
+        println("Circulo" in readOnlyFiguras)
+        println(readOnlyFiguras)
+        // readOnlyFiguras.add("Pentagono")
+        var figura: MutableList<String> = mutableListOf("Cuadrado2", "Triangulo2", "Circulo2")
+        println(figura)
+        figura.add("Pentagono2")
+        println(figura)
+        figura.remove("Cuadrado2")
+        println(figura)
+    }
 }
