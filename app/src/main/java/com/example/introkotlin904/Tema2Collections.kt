@@ -41,7 +41,7 @@ class Tema2Collections {
         println("Circulo" in readOnlyFiguras)
         println(readOnlyFiguras)
         // readOnlyFiguras.add("Pentagono")
-        var figura: MutableList<String> = mutableListOf("Cuadrado2", "Triangulo2", "Circulo2")
+        val figura: MutableList<String> = mutableListOf("Cuadrado2", "Triangulo2", "Circulo2")
         println(figura)
         figura.add("Pentagono2")
         println(figura)
