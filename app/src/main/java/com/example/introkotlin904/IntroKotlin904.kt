@@ -1,14 +1,12 @@
 package com.example.introkotlin904
-
 class IntroKotlin904 {
-
     fun main(){
 
-        //Variables de solo lectura Variables
+        //Variables de solo lectura (Variables Inmutables)
         val a = 4
         val b = 8
 
-        //Variables mutables VAR
+        //Variables Mutables VAR
         var c = 3
         /*a = 8*/
         c = 9
