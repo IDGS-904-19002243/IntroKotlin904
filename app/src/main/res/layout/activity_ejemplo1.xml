@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Apps904.Ejemplo1Activity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="80dp"
+        android:hint="Numero 1:"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="164dp"
+        android:hint="Numero 2:"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="36dp"
+        android:onClick="calcular"
+        android:text="Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Procesos" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="100dp"
+        android:text="Resultado.."
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn1" />
+
+    <RadioGroup
+        android:id="@+id/Procesos"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:layout_constraintVertical_bias="0.086">
+
+        <RadioButton
+            android:id="@+id/rdbtnSuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sumar" />
+
+        <RadioButton
+            android:id="@+id/rdbtnResta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restar" />
+
+        <RadioButton
+            android:id="@+id/rdbtnMultiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multipicar" />
+
+        <RadioButton
+            android:id="@+id/rdbtnDividision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dividir" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
